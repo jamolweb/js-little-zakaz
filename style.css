@@ -65,6 +65,40 @@ body {
   border: 0;
   width: 20%;
   border-radius: 10px;
+  transition: all 0.6s;
+}
+.individual-card .sent .sent-btn:hover {
+  background: grey;
+  color: white;
+  font-weight: 900;
+}
+
+.active-btn:hover {
+  background: #888888 !important;
+  color: #000000 !important;
+  font-weight: 900;
+  transition: all 0.7s;
+  border-radius: 8px;
+}
+
+.active-dark {
+  background: #fff !important;
+  color: #000 !important;
+  font-weight: 900;
+  transition: all 0.7s;
+  border-radius: 8px;
+  border: 1px solid black !important;
+}
+
+.active-light {
+  background: #000 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+button {
+  border: 0;
+  outline: 0;
 }
 
 .quesions {
@@ -253,7 +287,8 @@ body {
   .accordion {
     width: 100%;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 142% !important;
   }
 }/*# sourceMappingURL=style.css.map */

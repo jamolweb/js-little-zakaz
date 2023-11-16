@@ -71,9 +71,44 @@ body {
             border: 0;
             width: 20%;
             border-radius: 10px;
+            transition: all .6s;
+        }
+        .sent-btn:hover{
+            background: grey;
+            color: white;
+            font-weight: 900;
+
         }
     }
 }
+
+.active-btn:hover {
+    background: #888888 !important;
+    color: #000000 !important;
+    font-weight: 900;
+    transition: all .7s;
+    border-radius: 8px;
+}
+
+.active-dark {
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: 900;
+    transition: all .7s;
+    border-radius: 8px;
+    border: 1px solid black !important;
+}
+
+.active-light{
+    background: #000 !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+button{
+    border: 0;outline: 0;
+}
+
 
 .quesions {
     margin-top: 30px;
@@ -156,6 +191,7 @@ body {
     border-bottom: 1px solid black;
     width: 90%;
 }
+
 @media(max-width:1600px) {
     .container {
         width: 95%;
@@ -173,6 +209,7 @@ body {
         font-size: 40px;
     }
 }
+
 @media(max-width:1280px) {
     .container {
         width: 98%;
@@ -190,6 +227,7 @@ body {
         font-size: 30px !important;
     }
 }
+
 @media(max-width:930px) {
     .container {
         width: 99%;
@@ -207,6 +245,7 @@ body {
         font-size: 25px !important;
     }
 }
+
 @media(max-width:850px) {
     .individual-card-top {
         flex-direction: column-reverse;
@@ -243,6 +282,7 @@ body {
         font-size: 12px;
     }
 }
+
 @media(max-width:680px) {
     .select:nth-child(2) {
         display: none !important;
@@ -256,6 +296,7 @@ body {
         width: 130px !important;
     }
 }
+
 @media(max-width:340px) {
     .individual-card-top__text {
         font-size: 13px !important;
@@ -269,6 +310,7 @@ body {
         font-size: 24px !important;
     }
 }
+
 @media(max-width:400px) {
     .select {
         display: none;
@@ -278,20 +320,26 @@ body {
         width: 100% !important;
     }
 }
+
 @media(max-width:780px) {
-    .quesions-card{
+    .quesions-card {
         flex-direction: column;
     }
-    .inputs{
+
+    .inputs {
         margin-top: 20px;
     }
-    .panel{
+
+    .panel {
         width: 100%;
     }
-    .accordion{
+
+    .accordion {
         width: 100%;
     }
-    input,textarea{
+
+    input,
+    textarea {
         width: 142% !important;
     }
 }
